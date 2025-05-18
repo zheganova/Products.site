@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продуктовый магазин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product-page center">
+        <div class="product-tabs">
+            <ul class="product-tabs__list">
+                <li class="product-tabs__item product-tabs__item--active" data-tab="description">ОПИСАНИЕ</li>
+                <li class="product-tabs__item" data-tab="reviews">ОТЗЫВЫ</li>
+                <li class="product-tabs__item" data-tab="where-from">ОТКУДА?</li>
+            </ul>
+        </div>
+
+        <div class="product-details">
+            <p class="product-details__text product-details__text--first">Томаты на ветке красные (помидоры) - более плотные, яркие и ароматные по сравнению с обычными. Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.</p>
+            <p class="product-details__text">Помидор - незаменимый продукт в мировой кулинарии. Он - основа многочисленных соусов, маринадов, кетчупа, испанского холодного супа Гаспачо или итальянской закуски Капрезе. С ним делают салаты, его тушат, солят и консервируют. Помидоры на веточке особенно красиво смотрятся в запеченном виде.</p>
+            <p class="product-details__text--mobile product-details__text--mobile--first"><strong>Томаты на ветке красные</strong> (помидоры) - более плотные, яркие и ароматные по сравнению с обычными.</p>
+            <p class="product-details__text--mobile">Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.</p>
+        </div>
+
+        <div class="product-properties">
+            <div class="product-properties__group">
+                <h2 class="product-properties__title">ХАРАКТЕРИСТИКИ</h2>
+                <h2 class="product-properties__title--mobile">Характеристики</h2>
+                <dl class="product-properties__list">
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Страна</dt>
+                        <dd class="product-properties__value">Россия</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Поставщик</dt>
+                        <dd class="product-properties__value product-properties__value--esc">Фермеры Наталья и Юрий Лейман</dd>
+                        <dd class="product-properties__value product-properties__value--mobile">Наталья и Юрий Лейман</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Тип упаковки</dt>
+                        <dd class="product-properties__value">Крафтовый пакет</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Сертификаты качества</dt>
+                        <dd class="product-properties__value">В наличии</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="product-properties__group">
+                <h2 class="product-properties__title">ПИЩЕВАЯ ЦЕННОСТЬ НА 100Г</h2>
+                <h2 class="product-properties__title--mobile">Пищевая ценность на 100г</h2>
+                <dl class="product-properties__list">
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Энергетическая ценность</dt>
+                        <dd class="product-properties__value">18 ккал</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Белки</dt>
+                        <dd class="product-properties__value">0.9 г</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Жиры</dt>
+                        <dd class="product-properties__value">0.2 г</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Углеводы</dt>
+                        <dd class="product-properties__value">3.9 г</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="product-properties__group">
+                <h2 class="product-properties__title">УСЛОВИЯ ХРАНЕНИЯ</h2>
+                <h2 class="product-properties__title--mobile">Условия хранения</h2>
+                <dl class="product-properties__list">
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Срок хранения</dt>
+                        <dd class="product-properties__value">7 дней</dd>
+                    </div>
+                    <div class="product-properties__row">
+                        <dt class="product-properties__label">Температура хранения</dt>
+                        <dd class="product-properties__value">от +3° до +7°</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="related-products">
+            <h2 class="related-products__title">С этим товаром покупают</h2>
+            <div class="related-products__slider-container swiper">
+                <ul class="related-products__list swiper-wrapper">
+                    <li class="related-products__item swiper-slide">
+                        <div class="product-card">
+                            <img src="img/pic1.png" alt="Молоко 3,2%" class="product-card__image">
+                            <h3 class="product-card__title">Молоко 3,2%</h3>
+                            <p class="product-card__producer">от Вадима Рощина</p>
+                            <div class="product-card__actions">
+                                <span class="product-card__price">95 ₽ <span class="product-card__price--unit">/ 0,93 л</span></span>
+                                <button class="product-card__button">
+                                    <img src="img/cart.svg" alt="Корзина">
+                                </button>
+                            </div>
+                            <div class="product-card__rating">
+                                <img src="img/stars.png" alt="Звезды рейтинга">
+                            </div>
+                            <div class="product-card__icon">
+                                <img src="img/heart.svg" alt="Избранное">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="related-products__item swiper-slide">
+                        <div class="product-card">
+                            <img src="img/pic2.png" alt="Хлеб пшеничный" class="product-card__image">
+                            <h3 class="product-card__title">Хлеб пшеничный</h3>
+                            <p class="product-card__producer">от Дарьи и Марии</p>
+                            <div class="product-card__actions">
+                                <span class="product-card__price">95 ₽ <span class="product-card__price--unit">/ 930 г</span></span>
+                                <button class="product-card__button">
+                                    <img src="img/cart.svg" alt="Корзина">
+                                </button>
+                            </div>
+                            <div class="product-card__rating">
+                                <img src="img/stars.png" alt="Звезды рейтинга">
+                            </div>
+                            <div class="product-card__icon">
+                                <img src="img/heart.svg" alt="Избранное">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="related-products__item swiper-slide">
+                        <div class="product-card">
+                            <img src="img/pic3.png" alt="Яйца куриные" class="product-card__image">
+                            <h3 class="product-card__title">Яйца куриные</h3>
+                            <p class="product-card__producer">от Евгения Ромашова</p>
+                            <div class="product-card__actions">
+                                <span class="product-card__price">120 ₽ <span class="product-card__price--unit">/ 10 шт</span></span>
+                                <button class="product-card__button">
+                                    <img src="img/cart.svg" alt="Корзина">
+                                </button>
+                            </div>
+                            <div class="product-card__rating">
+                                <img src="img/stars.png" alt="Звезды рейтинга">
+                            </div>
+                            <div class="product-card__icon">
+                                <img src="img/heart.svg" alt="Избранное">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="related-products__item swiper-slide">
+                        <div class="product-card">
+                            <img src="img/pic4.png" alt="Масло сливочное 82%" class="product-card__image">
+                            <h3 class="product-card__title">Масло сливочное 82%</h3>
+                            <p class="product-card__producer">от Вадима Рощина</p>
+                            <div class="product-card__actions">
+                                <span class="product-card__price">290 ₽ <span class="product-card__price--unit">/ 250 г</span></span>
+                                <button class="product-card__button">
+                                    <img src="img/cart.svg" alt="Корзина">
+                                </button>
+                            </div>
+                            <div class="product-card__rating">
+                                <img src="img/stars.png" alt="Звезды рейтинга">
+                            </div>
+                            <div class="product-card__icon">
+                                <img src="img/heart.svg" alt="Избранное">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
